@@ -324,7 +324,7 @@ namespace ImageShaper
             toolTip1.SetToolTip(this.checkBox_FrameFiles, "在 Temp 子文件夹中为每个帧创建一个图像文件。");
             toolTip1.SetToolTip(this.textBox_CreateFiles, "框架图像的文件名。后跟一个 5 位数的帧号。\n如果设置了 *，则将使用原始文件名。");
             toolTip1.SetToolTip(this.comboBox_CreateFilesFormat, "单帧图像的格式。");
-            toolTip1.SetToolTip(this.checkBox_PreventWobbleBug, "防止炮塔单元在TS中的摆动错误。 设置时, 图像整形器确保每帧的 CX/CY 和 OffsetX/OffsetY 值都是均匀的。");
+            toolTip1.SetToolTip(this.checkBox_PreventWobbleBug, "防止炮塔单元在TS中的抖动问题。 勾选后, ImageShaper将确保每帧的 CX/CY 和 OffsetX/OffsetY 值都是均匀的。");
 
             toolTip1.SetToolTip(this.checkBox_UseCustomBackgroundColor, "启用后，颜色转换将使用指定的背景色作为透明调色板颜色 #0.\n禁用后，颜色转换将图像左上角像素的颜色用于透明颜色 #0.");
             toolTip1.SetToolTip(this.button_CustomBackgroundColor, "用于将颜色转换为透明调色板颜色的固定背景色 #0.");
@@ -1729,7 +1729,7 @@ namespace ImageShaper
             }
         }
 
-        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void InfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_AboutBox ab = new Form_AboutBox();
             ab.Icon = this.Icon;
@@ -1999,7 +1999,7 @@ namespace ImageShaper
             ab.AddEmptyLine();
             ab.AddText("--Version 01.01.00.21--", Color.Blue, f);
             ab.AddEmptyLine(1);
-            ab.AddText("\t-(更新) 预览不再锁定显示文件的访问权限。现在可以在图像整形器打开时替换/更改图像文件。");
+            ab.AddText("\t-(更新) 预览不再锁定显示文件的访问权限。现在可以在ImageShaper打开时替换/更改图像文件。");
             ab.AddEmptyLine(1);
             ab.AddText("\t-(更新) 新选项“更改所选单元格的顺序”已添加到数据网格上下文菜单中。");
 
@@ -2018,7 +2018,7 @@ namespace ImageShaper
             ab.AddText("\t-(更新) 添加了命令行选项以支持设置“拆分结果”");
 
             ab.AddEmptyLine();
-            ab.AddText("--Version 01.01.00.24--  (当前版本)", Color.Gold, f);
+            ab.AddText("--Version 01.01.00.24--", Color.Blue, f);
             ab.AddEmptyLine(1);
             ab.AddText("\t-(更新) 新功能“加载和拆分图像”添加到右键单击上下文菜单中，它允许加载带有帧的图像作为图像内部的面板。");
             ab.AddEmptyLine(1);
@@ -2026,9 +2026,14 @@ namespace ImageShaper
             ab.AddEmptyLine(1);
             ab.AddText("\t-(更新) 每当图像更改时，自定义图像控件（例如预览窗口）不再重置视图/滚动条。");
 
+            ab.AddEmptyLine();
+            ab.AddText("--Version 01.01.00.25--  (当前版本)", Color.Gold, f);
+            ab.AddEmptyLine(1);
+            ab.AddText("\t-(更新) 多语言支持已经上线！");
+
             //TODO add auto Shadow generator
             ab.AddEmptyLine(1);
-            ab.AddText("\t这是汉化的最新版本，如需要更新版本请联系3376018813@qq.com");
+            ab.AddText("\n\t这是汉化的最新版本，如需要更新版本请联系3376018813@qq.com");
 
             ab.AddEmptyLine(1);
             ab.Show();
@@ -2039,7 +2044,7 @@ namespace ImageShaper
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.DefaultExt = "isp";
             sfd.InitialDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            sfd.Filter = "图像整形器项目|*.isp";
+            sfd.Filter = "ImageShaper项目|*.isp";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 if (File.Exists(sfd.FileName)) File.Delete(sfd.FileName);
@@ -2057,7 +2062,7 @@ namespace ImageShaper
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.InitialDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            ofd.Filter = "图像整形器项目|*.isp";
+            ofd.Filter = "ImageShaper项目|*.isp";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -2246,5 +2251,39 @@ namespace ImageShaper
 
         }
 
+        private void dataGridView_Files_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void customMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel_DefaultCompression_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_PreventWobbleBug_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

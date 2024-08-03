@@ -312,7 +312,7 @@
             this.uC_ImageCanvas1_Original.ShowColorInfo = true;
             this.uC_ImageCanvas1_Original.Size = new System.Drawing.Size(200, 202);
             this.uC_ImageCanvas1_Original.TabIndex = 1;
-            this.uC_ImageCanvas1_Original.ZoomLevel = 1;
+            this.uC_ImageCanvas1_Original.ZoomLevel = 1D;
             // 
             // uC_ImageCanvas2_Preview
             // 
@@ -328,7 +328,7 @@
             this.uC_ImageCanvas2_Preview.ShowColorInfo = true;
             this.uC_ImageCanvas2_Preview.Size = new System.Drawing.Size(200, 202);
             this.uC_ImageCanvas2_Preview.TabIndex = 2;
-            this.uC_ImageCanvas2_Preview.ZoomLevel = 1;
+            this.uC_ImageCanvas2_Preview.ZoomLevel = 1D;
             // 
             // tableLayoutPanel4_PreviewFrame
             // 

@@ -41,16 +41,11 @@
             this.groupBox_Left = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3_GroupLeft = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4_FrameLeft = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDown_FrameLeft = new NumericUpDownEx();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown_Zoom = new NumericUpDownEx();
             this.label_FrameLeft = new System.Windows.Forms.Label();
-            this.uC_ImageCanvas_Left = new ImageShaper.UC_ImageCanvas();
             this.groupBox_Right = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3_GroupRight = new System.Windows.Forms.TableLayoutPanel();
-            this.uC_ImageCanvas_Right = new ImageShaper.UC_ImageCanvas();
             this.tableLayoutPanel4_FrameRight = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDown_FrameRight = new NumericUpDownEx();
             this.label_FrameRight = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1_Main = new System.Windows.Forms.TableLayoutPanel();
@@ -58,6 +53,11 @@
             this.button_Close = new System.Windows.Forms.Button();
             this.button_LoadSHP = new System.Windows.Forms.Button();
             this.button_LoadPalette = new System.Windows.Forms.Button();
+            this.numericUpDown_FrameLeft = new NumericUpDownEx();
+            this.numericUpDown_Zoom = new NumericUpDownEx();
+            this.uC_ImageCanvas_Left = new ImageShaper.UC_ImageCanvas();
+            this.uC_ImageCanvas_Right = new ImageShaper.UC_ImageCanvas();
+            this.numericUpDown_FrameRight = new NumericUpDownEx();
             this.tableLayoutPanel2_Left.SuspendLayout();
             this.groupBox_Mode.SuspendLayout();
             this.tableLayoutPanel4_GroupMode.SuspendLayout();
@@ -65,14 +65,14 @@
             this.groupBox_Left.SuspendLayout();
             this.tableLayoutPanel3_GroupLeft.SuspendLayout();
             this.tableLayoutPanel4_FrameLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Zoom)).BeginInit();
             this.groupBox_Right.SuspendLayout();
             this.tableLayoutPanel3_GroupRight.SuspendLayout();
             this.tableLayoutPanel4_FrameRight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameRight)).BeginInit();
             this.tableLayoutPanel1_Main.SuspendLayout();
             this.tableLayoutPanel2_Right.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Zoom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameRight)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2_Left
@@ -237,19 +237,6 @@
             this.tableLayoutPanel4_FrameLeft.Size = new System.Drawing.Size(214, 28);
             this.tableLayoutPanel4_FrameLeft.TabIndex = 4;
             // 
-            // numericUpDown_FrameLeft
-            // 
-            this.numericUpDown_FrameLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown_FrameLeft.IncrementByMouseWheel = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.numericUpDown_FrameLeft.Location = new System.Drawing.Point(157, 3);
-            this.numericUpDown_FrameLeft.Name = "numericUpDown_FrameLeft";
-            this.numericUpDown_FrameLeft.Size = new System.Drawing.Size(54, 21);
-            this.numericUpDown_FrameLeft.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -260,34 +247,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "缩放:";
             // 
-            // numericUpDown_Zoom
-            // 
-            this.numericUpDown_Zoom.IncrementByMouseWheel = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.numericUpDown_Zoom.Location = new System.Drawing.Point(53, 3);
-            this.numericUpDown_Zoom.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown_Zoom.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown_Zoom.Name = "numericUpDown_Zoom";
-            this.numericUpDown_Zoom.Size = new System.Drawing.Size(39, 21);
-            this.numericUpDown_Zoom.TabIndex = 3;
-            this.numericUpDown_Zoom.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown_Zoom.ValueChanged += new System.EventHandler(this.numericUpDown_Zoom_ValueChanged);
-            // 
             // label_FrameLeft
             // 
             this.label_FrameLeft.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -297,22 +256,6 @@
             this.label_FrameLeft.Size = new System.Drawing.Size(23, 12);
             this.label_FrameLeft.TabIndex = 1;
             this.label_FrameLeft.Text = "帧:";
-            // 
-            // uC_ImageCanvas_Left
-            // 
-            this.uC_ImageCanvas_Left.CaptureFocusOnMouseOver = true;
-            this.uC_ImageCanvas_Left.CenterOffset = new System.Drawing.Point(0, 0);
-            this.uC_ImageCanvas_Left.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_ImageCanvas_Left.Location = new System.Drawing.Point(3, 3);
-            this.uC_ImageCanvas_Left.LocationFromCenter = false;
-            this.uC_ImageCanvas_Left.MinimumSize = new System.Drawing.Size(200, 185);
-            this.uC_ImageCanvas_Left.Name = "uC_ImageCanvas_Left";
-            this.uC_ImageCanvas_Left.PreviewPixel = null;
-            this.uC_ImageCanvas_Left.ShowCenterCross = false;
-            this.uC_ImageCanvas_Left.ShowColorInfo = true;
-            this.uC_ImageCanvas_Left.Size = new System.Drawing.Size(208, 186);
-            this.uC_ImageCanvas_Left.TabIndex = 5;
-            this.uC_ImageCanvas_Left.ZoomLevel = 1;
             // 
             // groupBox_Right
             // 
@@ -340,23 +283,6 @@
             this.tableLayoutPanel3_GroupRight.Size = new System.Drawing.Size(215, 220);
             this.tableLayoutPanel3_GroupRight.TabIndex = 0;
             // 
-            // uC_ImageCanvas_Right
-            // 
-            this.uC_ImageCanvas_Right.AutoScroll = true;
-            this.uC_ImageCanvas_Right.CaptureFocusOnMouseOver = true;
-            this.uC_ImageCanvas_Right.CenterOffset = new System.Drawing.Point(0, 0);
-            this.uC_ImageCanvas_Right.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_ImageCanvas_Right.Location = new System.Drawing.Point(3, 3);
-            this.uC_ImageCanvas_Right.LocationFromCenter = false;
-            this.uC_ImageCanvas_Right.MinimumSize = new System.Drawing.Size(200, 185);
-            this.uC_ImageCanvas_Right.Name = "uC_ImageCanvas_Right";
-            this.uC_ImageCanvas_Right.PreviewPixel = null;
-            this.uC_ImageCanvas_Right.ShowCenterCross = false;
-            this.uC_ImageCanvas_Right.ShowColorInfo = true;
-            this.uC_ImageCanvas_Right.Size = new System.Drawing.Size(209, 186);
-            this.uC_ImageCanvas_Right.TabIndex = 1;
-            this.uC_ImageCanvas_Right.ZoomLevel = 1;
-            // 
             // tableLayoutPanel4_FrameRight
             // 
             this.tableLayoutPanel4_FrameRight.ColumnCount = 2;
@@ -373,19 +299,6 @@
             this.tableLayoutPanel4_FrameRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4_FrameRight.Size = new System.Drawing.Size(215, 28);
             this.tableLayoutPanel4_FrameRight.TabIndex = 5;
-            // 
-            // numericUpDown_FrameRight
-            // 
-            this.numericUpDown_FrameRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numericUpDown_FrameRight.IncrementByMouseWheel = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.numericUpDown_FrameRight.Location = new System.Drawing.Point(158, 3);
-            this.numericUpDown_FrameRight.Name = "numericUpDown_FrameRight";
-            this.numericUpDown_FrameRight.Size = new System.Drawing.Size(54, 21);
-            this.numericUpDown_FrameRight.TabIndex = 0;
             // 
             // label_FrameRight
             // 
@@ -473,6 +386,93 @@
             this.button_LoadPalette.UseVisualStyleBackColor = true;
             this.button_LoadPalette.Click += new System.EventHandler(this.button_LoadPalette_Click);
             // 
+            // numericUpDown_FrameLeft
+            // 
+            this.numericUpDown_FrameLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numericUpDown_FrameLeft.IncrementByMouseWheel = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericUpDown_FrameLeft.Location = new System.Drawing.Point(157, 3);
+            this.numericUpDown_FrameLeft.Name = "numericUpDown_FrameLeft";
+            this.numericUpDown_FrameLeft.Size = new System.Drawing.Size(54, 21);
+            this.numericUpDown_FrameLeft.TabIndex = 0;
+            // 
+            // numericUpDown_Zoom
+            // 
+            this.numericUpDown_Zoom.IncrementByMouseWheel = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericUpDown_Zoom.Location = new System.Drawing.Point(53, 3);
+            this.numericUpDown_Zoom.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown_Zoom.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_Zoom.Name = "numericUpDown_Zoom";
+            this.numericUpDown_Zoom.Size = new System.Drawing.Size(39, 21);
+            this.numericUpDown_Zoom.TabIndex = 3;
+            this.numericUpDown_Zoom.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_Zoom.ValueChanged += new System.EventHandler(this.numericUpDown_Zoom_ValueChanged);
+            // 
+            // uC_ImageCanvas_Left
+            // 
+            this.uC_ImageCanvas_Left.CaptureFocusOnMouseOver = true;
+            this.uC_ImageCanvas_Left.CenterOffset = new System.Drawing.Point(0, 0);
+            this.uC_ImageCanvas_Left.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_ImageCanvas_Left.Location = new System.Drawing.Point(3, 3);
+            this.uC_ImageCanvas_Left.LocationFromCenter = false;
+            this.uC_ImageCanvas_Left.MinimumSize = new System.Drawing.Size(200, 185);
+            this.uC_ImageCanvas_Left.Name = "uC_ImageCanvas_Left";
+            this.uC_ImageCanvas_Left.PreviewPixel = null;
+            this.uC_ImageCanvas_Left.ShowCenterCross = false;
+            this.uC_ImageCanvas_Left.ShowColorInfo = true;
+            this.uC_ImageCanvas_Left.Size = new System.Drawing.Size(208, 186);
+            this.uC_ImageCanvas_Left.TabIndex = 5;
+            this.uC_ImageCanvas_Left.ZoomLevel = 1D;
+            // 
+            // uC_ImageCanvas_Right
+            // 
+            this.uC_ImageCanvas_Right.AutoScroll = true;
+            this.uC_ImageCanvas_Right.CaptureFocusOnMouseOver = true;
+            this.uC_ImageCanvas_Right.CenterOffset = new System.Drawing.Point(0, 0);
+            this.uC_ImageCanvas_Right.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_ImageCanvas_Right.Location = new System.Drawing.Point(3, 3);
+            this.uC_ImageCanvas_Right.LocationFromCenter = false;
+            this.uC_ImageCanvas_Right.MinimumSize = new System.Drawing.Size(200, 185);
+            this.uC_ImageCanvas_Right.Name = "uC_ImageCanvas_Right";
+            this.uC_ImageCanvas_Right.PreviewPixel = null;
+            this.uC_ImageCanvas_Right.ShowCenterCross = false;
+            this.uC_ImageCanvas_Right.ShowColorInfo = true;
+            this.uC_ImageCanvas_Right.Size = new System.Drawing.Size(209, 186);
+            this.uC_ImageCanvas_Right.TabIndex = 1;
+            this.uC_ImageCanvas_Right.ZoomLevel = 1D;
+            // 
+            // numericUpDown_FrameRight
+            // 
+            this.numericUpDown_FrameRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numericUpDown_FrameRight.IncrementByMouseWheel = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericUpDown_FrameRight.Location = new System.Drawing.Point(158, 3);
+            this.numericUpDown_FrameRight.Name = "numericUpDown_FrameRight";
+            this.numericUpDown_FrameRight.Size = new System.Drawing.Size(54, 21);
+            this.numericUpDown_FrameRight.TabIndex = 0;
+            // 
             // Form_FireFLHFinder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -492,15 +492,15 @@
             this.tableLayoutPanel3_GroupLeft.ResumeLayout(false);
             this.tableLayoutPanel4_FrameLeft.ResumeLayout(false);
             this.tableLayoutPanel4_FrameLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Zoom)).EndInit();
             this.groupBox_Right.ResumeLayout(false);
             this.tableLayoutPanel3_GroupRight.ResumeLayout(false);
             this.tableLayoutPanel4_FrameRight.ResumeLayout(false);
             this.tableLayoutPanel4_FrameRight.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameRight)).EndInit();
             this.tableLayoutPanel1_Main.ResumeLayout(false);
             this.tableLayoutPanel2_Right.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Zoom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FrameRight)).EndInit();
             this.ResumeLayout(false);
 
         }

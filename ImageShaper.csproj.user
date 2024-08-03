@@ -1,4 +1,4 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <PublishUrlHistory>publish\</PublishUrlHistory>
     <InstallUrlHistory>
@@ -11,6 +11,7 @@
     </BootstrapperUrlHistory>
     <FallbackCulture>de-DE</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ErrorReportUrlHistory />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <StartArguments>

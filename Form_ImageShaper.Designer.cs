@@ -121,12 +121,12 @@
             this.tableLayoutPanel_1Main.Controls.Add(this.tableLayoutPanel_3Start, 0, 1);
             this.tableLayoutPanel_1Main.Controls.Add(this.tableLayoutPanel_2GridPalette, 0, 0);
             this.tableLayoutPanel_1Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_1Main.Location = new System.Drawing.Point(0, 29);
+            this.tableLayoutPanel_1Main.Location = new System.Drawing.Point(0, 27);
             this.tableLayoutPanel_1Main.Name = "tableLayoutPanel_1Main";
             this.tableLayoutPanel_1Main.RowCount = 2;
             this.tableLayoutPanel_1Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel_1Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel_1Main.Size = new System.Drawing.Size(631, 385);
+            this.tableLayoutPanel_1Main.Size = new System.Drawing.Size(631, 387);
             this.tableLayoutPanel_1Main.TabIndex = 0;
             // 
             // tableLayoutPanel_3Start
@@ -139,7 +139,7 @@
             this.tableLayoutPanel_3Start.Controls.Add(this.tableLayoutPanel4_Settings, 1, 0);
             this.tableLayoutPanel_3Start.Controls.Add(this.tableLayoutPanel4_Start, 2, 0);
             this.tableLayoutPanel_3Start.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_3Start.Location = new System.Drawing.Point(0, 316);
+            this.tableLayoutPanel_3Start.Location = new System.Drawing.Point(0, 318);
             this.tableLayoutPanel_3Start.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel_3Start.Name = "tableLayoutPanel_3Start";
             this.tableLayoutPanel_3Start.RowCount = 1;
@@ -209,8 +209,9 @@
             this.checkBox_PreventWobbleBug.Name = "checkBox_PreventWobbleBug";
             this.checkBox_PreventWobbleBug.Size = new System.Drawing.Size(120, 16);
             this.checkBox_PreventWobbleBug.TabIndex = 1;
-            this.checkBox_PreventWobbleBug.Text = "防止 TS 摆动错误";
+            this.checkBox_PreventWobbleBug.Text = "防止 TS 抖动问题";
             this.checkBox_PreventWobbleBug.UseVisualStyleBackColor = true;
+            this.checkBox_PreventWobbleBug.CheckedChanged += new System.EventHandler(this.checkBox_PreventWobbleBug_CheckedChanged);
             // 
             // tableLayoutPanel_5CreateFiles
             // 
@@ -284,9 +285,9 @@
             this.checkBox_OptimizeCanvas.Location = new System.Drawing.Point(0, 3);
             this.checkBox_OptimizeCanvas.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.checkBox_OptimizeCanvas.Name = "checkBox_OptimizeCanvas";
-            this.checkBox_OptimizeCanvas.Size = new System.Drawing.Size(78, 16);
+            this.checkBox_OptimizeCanvas.Size = new System.Drawing.Size(72, 16);
             this.checkBox_OptimizeCanvas.TabIndex = 0;
-            this.checkBox_OptimizeCanvas.Text = "opt. 画布";
+            this.checkBox_OptimizeCanvas.Text = "优化画布";
             this.checkBox_OptimizeCanvas.UseVisualStyleBackColor = true;
             this.checkBox_OptimizeCanvas.CheckedChanged += new System.EventHandler(this.checkBox_OptimizeCanvas_CheckedChanged);
             // 
@@ -390,7 +391,7 @@
             this.tableLayoutPanel_2GridPalette.Name = "tableLayoutPanel_2GridPalette";
             this.tableLayoutPanel_2GridPalette.RowCount = 1;
             this.tableLayoutPanel_2GridPalette.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_2GridPalette.Size = new System.Drawing.Size(631, 316);
+            this.tableLayoutPanel_2GridPalette.Size = new System.Drawing.Size(631, 318);
             this.tableLayoutPanel_2GridPalette.TabIndex = 4;
             // 
             // dataGridView_Files
@@ -409,8 +410,9 @@
             this.dataGridView_Files.Name = "dataGridView_Files";
             this.dataGridView_Files.RowHeadersWidth = 50;
             this.dataGridView_Files.RowTemplate.Height = 23;
-            this.dataGridView_Files.Size = new System.Drawing.Size(435, 310);
+            this.dataGridView_Files.Size = new System.Drawing.Size(435, 312);
             this.dataGridView_Files.TabIndex = 3;
+            this.dataGridView_Files.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Files_CellContentClick);
             // 
             // Column_ImagesA
             // 
@@ -446,7 +448,7 @@
             this.tableLayoutPanel_3Settings.RowCount = 2;
             this.tableLayoutPanel_3Settings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel_3Settings.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel_3Settings.Size = new System.Drawing.Size(190, 316);
+            this.tableLayoutPanel_3Settings.Size = new System.Drawing.Size(190, 318);
             this.tableLayoutPanel_3Settings.TabIndex = 4;
             // 
             // groupBox_Palette
@@ -456,7 +458,7 @@
             this.groupBox_Palette.Location = new System.Drawing.Point(0, 0);
             this.groupBox_Palette.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.groupBox_Palette.Name = "groupBox_Palette";
-            this.groupBox_Palette.Size = new System.Drawing.Size(190, 177);
+            this.groupBox_Palette.Size = new System.Drawing.Size(190, 179);
             this.groupBox_Palette.TabIndex = 6;
             this.groupBox_Palette.TabStop = false;
             this.groupBox_Palette.Text = "调色板管理器";
@@ -473,7 +475,7 @@
             this.uC_Palette1.Palette = null;
             this.uC_Palette1.PaletteSelectedColor = 0;
             this.uC_Palette1.ShowPaletteOnly = false;
-            this.uC_Palette1.Size = new System.Drawing.Size(184, 157);
+            this.uC_Palette1.Size = new System.Drawing.Size(184, 159);
             this.uC_Palette1.TabIndex = 3;
             this.uC_Palette1.Load += new System.EventHandler(this.uC_Palette1_Load);
             // 
@@ -481,7 +483,7 @@
             // 
             this.groupBox_FrameSettings.Controls.Add(this.tableLayoutPanel_3FrameSettings);
             this.groupBox_FrameSettings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox_FrameSettings.Location = new System.Drawing.Point(0, 182);
+            this.groupBox_FrameSettings.Location = new System.Drawing.Point(0, 184);
             this.groupBox_FrameSettings.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox_FrameSettings.Name = "groupBox_FrameSettings";
             this.groupBox_FrameSettings.Size = new System.Drawing.Size(190, 134);
@@ -551,7 +553,7 @@
             this.checkBox_RadarColorAverage.Name = "checkBox_RadarColorAverage";
             this.checkBox_RadarColorAverage.Size = new System.Drawing.Size(48, 16);
             this.checkBox_RadarColorAverage.TabIndex = 5;
-            this.checkBox_RadarColorAverage.Text = "avg.";
+            this.checkBox_RadarColorAverage.Text = "均色";
             this.checkBox_RadarColorAverage.UseVisualStyleBackColor = true;
             this.checkBox_RadarColorAverage.CheckedChanged += new System.EventHandler(this.checkBox_RadarColorAverage_CheckedChanged);
             // 
@@ -743,9 +745,12 @@
             this.toolStripComboBox_DefaultCompression});
             this.customMenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.customMenuStrip1.Name = "customMenuStrip1";
-            this.customMenuStrip1.Size = new System.Drawing.Size(631, 29);
+            this.customMenuStrip1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 2);
+            this.customMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.customMenuStrip1.Size = new System.Drawing.Size(631, 27);
             this.customMenuStrip1.TabIndex = 1;
             this.customMenuStrip1.Text = "自定义菜单1";
+            this.customMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.customMenuStrip1_ItemClicked);
             // 
             // infoToolStripMenuItem
             // 
@@ -754,7 +759,7 @@
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(44, 25);
             this.infoToolStripMenuItem.Text = "关于";
-            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.InfoToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -765,6 +770,7 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 25);
             this.fileToolStripMenuItem.Text = "文件";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // saveProjectToolStripMenuItem
             // 
@@ -801,6 +807,7 @@
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(44, 25);
             this.optionsToolStripMenuItem.Text = "选项";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem_Label_NUD_NrWorker
             // 
@@ -839,6 +846,8 @@
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(44, 25);
             this.toolsToolStripMenuItem.Text = "工具";
+            this.toolsToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.toolsToolStripMenuItem.Click += new System.EventHandler(this.toolsToolStripMenuItem_Click);
             // 
             // fireFLHFinderToolStripMenuItem
             // 
@@ -850,14 +859,15 @@
             // 
             // toolStripLabel_DefaultCompression
             // 
-            this.toolStripLabel_DefaultCompression.ForeColor = System.Drawing.Color.White;
             this.toolStripLabel_DefaultCompression.Margin = new System.Windows.Forms.Padding(10, 1, 0, 1);
             this.toolStripLabel_DefaultCompression.Name = "toolStripLabel_DefaultCompression";
             this.toolStripLabel_DefaultCompression.Size = new System.Drawing.Size(35, 23);
             this.toolStripLabel_DefaultCompression.Text = "压缩:";
+            this.toolStripLabel_DefaultCompression.Click += new System.EventHandler(this.toolStripLabel_DefaultCompression_Click);
             // 
             // toolStripComboBox_DefaultCompression
             // 
+            this.toolStripComboBox_DefaultCompression.BackColor = System.Drawing.SystemColors.Window;
             this.toolStripComboBox_DefaultCompression.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.toolStripComboBox_DefaultCompression.Name = "toolStripComboBox_DefaultCompression";
             this.toolStripComboBox_DefaultCompression.Size = new System.Drawing.Size(140, 25);

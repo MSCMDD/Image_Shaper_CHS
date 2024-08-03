@@ -17,7 +17,6 @@ C:\Users\AoMe\Desktop\ImageShaper\obj\Release\ImageShaper_CHS.Properties.Resourc
 C:\Users\AoMe\Desktop\ImageShaper\obj\Release\ImageShaper_CHS.exe
 C:\Users\AoMe\Desktop\ImageShaper\obj\Release\ImageShaper_CHS.pdb
 D:\Image_Shaper_CHS\bin\Release\ImageShaper_CHS.exe
-D:\Image_Shaper_CHS\obj\Release\ResolveAssemblyReference.cache
 D:\Image_Shaper_CHS\obj\Release\ImageShaper.Custom_ToolStrip_UC_FolderSelector.resources
 D:\Image_Shaper_CHS\obj\Release\Form_AboutBox.resources
 D:\Image_Shaper_CHS\obj\Release\ImageShaper.Form_DockPreview.resources
@@ -31,3 +30,5 @@ D:\Image_Shaper_CHS\obj\Release\ImageShaper.UC_ImageCanvas.resources
 D:\Image_Shaper_CHS\obj\Release\ImageShaper.UC_Palette.resources
 D:\Image_Shaper_CHS\obj\Release\ImageShaper.csproj.GenerateResource.Cache
 D:\Image_Shaper_CHS\obj\Release\ImageShaper_CHS.exe
+D:\Image_Shaper_CHS\obj\Release\ImageShaper.csproj.AssemblyReference.cache
+D:\Image_Shaper_CHS\obj\Release\ImageShaper.csproj.CoreCompileInputs.cache
