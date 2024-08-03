@@ -14,8 +14,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
-    - name: "Install .NET Framework 3.5"
-      run: Enable-WindowsOptionalFeature -Online -FeatureName "Netfx3" -All
+    - name: "Install .NET Framework 3.5 & 7-Zip"
+      run: |
+          Enable-WindowsOptionalFeature -Online -FeatureName "Netfx3" -All
+          choco install 7zip
     - name: "Build"
       run: C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe ImageShaper.csproj
     - name: Upload ImageShaper Artifacts
@@ -24,9 +26,7 @@ jobs:
         name: ImageShaper_CHS
         path: bin/Release/
     - name: Package ImageShaper
-      uses: edgarrc/action-7z@v1
-      with:
-        args: 7z a -t7z -mx=9 ImageShaper_CHS.zip bin/Release/
+      run: 7z a -mx=9 ImageShaper_CHS.zip bin/Release/
     - name: Release ImageShaper
       if: github.event_name != 'pull_request'
       uses: marvinpinto/action-automatic-releases@master
