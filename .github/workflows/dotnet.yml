@@ -39,4 +39,3 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         files: ImageShaper_CHS.zip
         prerelease: false
-
