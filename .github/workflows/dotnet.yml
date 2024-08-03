@@ -23,8 +23,13 @@ jobs:
       with:
         name: ImageShaper_CHS
         path: bin/Release/
-    - name: Download a single artifact
-      uses: actions/download-artifact@v4
+
+    - name: Package ImageShaper
+      uses: thedoctor0/zip-release@0.7.5
+      with:
+        type: 'zip'
+        filename: 'ImageShaper_CHS.zip'
+        path: bin/Release/
     - name: Release ImageShaper
       if: github.event_name != 'pull_request'
       uses: marvinpinto/action-automatic-releases@master
@@ -34,3 +39,4 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         files: ImageShaper_CHS.zip
         prerelease: false
+
