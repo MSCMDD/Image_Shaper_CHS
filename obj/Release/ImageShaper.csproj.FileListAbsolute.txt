@@ -30,5 +30,4 @@ D:\Image_Shaper_CHS\obj\Release\ImageShaper.UC_ImageCanvas.resources
 D:\Image_Shaper_CHS\obj\Release\ImageShaper.UC_Palette.resources
 D:\Image_Shaper_CHS\obj\Release\ImageShaper.csproj.GenerateResource.Cache
 D:\Image_Shaper_CHS\obj\Release\ImageShaper_CHS.exe
-D:\Image_Shaper_CHS\obj\Release\ImageShaper.csproj.AssemblyReference.cache
-D:\Image_Shaper_CHS\obj\Release\ImageShaper.csproj.CoreCompileInputs.cache
+D:\Image_Shaper_CHS\obj\Release\ResolveAssemblyReference.cache
