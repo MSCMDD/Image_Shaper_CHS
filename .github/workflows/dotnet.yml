@@ -21,12 +21,10 @@ jobs:
     - name: Upload ImageShaper Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: ImageShaper
+        name: ImageShaper_CHS
         path: bin/Release/
     - name: Download a single artifact
       uses: actions/download-artifact@v4
-      with:
-        name: ImageShaper
     - name: Release ImageShaper
       if: github.event_name != 'pull_request'
       uses: marvinpinto/action-automatic-releases@master
@@ -34,5 +32,5 @@ jobs:
         title: "ImageShaper_CHS"
         automatic_release_tag: "CHS"
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        files: ImageShaper.zip
+        files: ImageShaper_CHS.zip
         prerelease: false
