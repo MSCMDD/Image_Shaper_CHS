@@ -17,7 +17,7 @@ jobs:
     - name: "Install .NET Framework 3.5"
       run: Enable-WindowsOptionalFeature -Online -FeatureName "Netfx3" -All
     - name: "Build"
-      run: C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe ImageShaper.sln
+      run: C:\Windows\Microsoft.NET\Framework\v3.5\MSBuild.exe ImageShaper.csproj
     - name: Upload ImageShaper Artifacts
       uses: actions/upload-artifact@v2
       with:
