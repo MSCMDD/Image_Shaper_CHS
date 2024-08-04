@@ -27,6 +27,7 @@
 ## 下载 ImageShaper_CHS
 
 GitHub Release：https://github.com/MSCMDD/Image_Shaper_CHS/releases
+
 Github Action：https://github.com/MSCMDD/Image_Shaper_CHS/actions
 
 ## 使用教程：
